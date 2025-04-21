@@ -1,0 +1,18 @@
+<!-- layout.component.html -->
+<div class="flex h-screen overflow-hidden bg-gray-50">
+  <!-- Sidebar -->
+  <app-sidebar (sidebarToggled)="onSidebarToggled($event)"></app-sidebar>
+
+  <!-- Contenu principal -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <!-- Header -->
+    <app-header (menuToggled)="toggleMobileMenu()"></app-header>
+
+    <!-- Contenu principal scrollable -->
+    <main class="flex-1 overflow-y-auto p-6 bg-gray-100 dark:bg-gray-900" >
+      <div class="container mx-auto">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>

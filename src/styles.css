@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html{
+  font-size: 80%;
+}
+
+@theme {
+    /* Couleurs primaires */
+    --color-primary-light: oklch(0.44 0.10 218.72); /* #1a6d80 */
+    --color-primary-dark: oklch(0.30 0.07 219.58); /* #0c3a45 */
+    
+    /* Couleurs secondaires */
+
+    --color-secondary-light: oklch(0.85 0.09 76.15); /* #fad178 */
+    --color-secondary-dark: oklch(0.77 0.17 78.55); /* #f7a726 */
+    
+    /* Couleurs du logo */
+    --color-primary: #0A71B6;
+    --color-secondary: #089C44;  
+    --color-logo-orange: #DF8321;
+    --color-logo-green-medium: #34A06C;
+    --color-logo-green-light: #72C4A5;
+}
+
+.dark {
+    background: #111827; /* bg-gray-900 */
+}
